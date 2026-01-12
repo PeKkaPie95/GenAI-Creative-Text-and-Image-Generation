@@ -1,113 +1,99 @@
-# GenAI-Creative-Text-and-Image-Generation
+# Generative AI Project: Transformers & GANs
 
-Generative AI Project: Transformers & GANs
+This repository contains my work on a comprehensive **Generative AI project** covering both **text generation** and **image generation** models. The project focuses on understanding and implementing modern generative architectures, including **Transformers**, **GPT-2 fine-tuning**, and multiple **GAN variants**, through hands-on experimentation and implementation.
 
-This repository contains my work on a comprehensive Generative AI project covering both text generation and image generation models. The project focuses on understanding and implementing modern generative architectures, including transformers, GPT-2 fine-tuning, and multiple GAN variants, through hands-on experimentation and implementation.
-
-Project Overview
+## Project Overview
 
 The project is divided into two major phases:
 
-Phase 1: Text-based Generative AI using Transformers and GPT-style models
-
-Phase 2: Image-based Generative AI using Generative Adversarial Networks (GANs)
+* **Phase 1:** Text-based Generative AI using Transformers and GPT-style models
+* **Phase 2:** Image-based Generative AI using Generative Adversarial Networks (GANs)
 
 The work emphasizes dataset preparation, model implementation, training, evaluation, and practical experimentation with generative systems.
 
-Phase 1: Generative AI with Transformers
-Dataset Preparation
+---
 
-Curated a creative text dataset (e.g., poetry, short stories, or recipes) from publicly available sources.
+## Phase 1: Generative AI with Transformers
 
-Cleaned and normalized raw text data.
+### Dataset Preparation
 
-Tokenized text using word-level and subword-level tokenization.
+* Curated a creative text dataset (e.g., poetry, short stories, or recipes) from publicly available sources
+* Cleaned and normalized raw text data
+* Tokenized text using word-level and subword-level tokenization
+* Prepared datasets suitable for transformer-based training
 
-Prepared datasets suitable for transformer-based training.
+### Transformer Fundamentals
 
-Transformer Fundamentals
+* Studied attention mechanisms, including self-attention and multi-head attention
+* Understood positional encoding and encoder–decoder architectures
+* Compared transformers with RNN-, LSTM-, and GRU-based models
 
-Studied attention mechanisms, including self-attention and multi-head attention.
+### Building a Transformer from Scratch
 
-Understood positional encoding and encoder–decoder architectures.
+* Implemented a basic transformer model using PyTorch
+* Developed core components:
 
-Compared transformers with RNN, LSTM, and GRU-based models.
+  * Self-attention mechanism
+  * Positional encoding
+  * Encoder and decoder layers
+* Trained the model for next-token prediction tasks
+* Evaluated performance using cross-entropy loss and qualitative text generation
+* Generated sample outputs to analyze contextual coherence
 
-Building a Transformer from Scratch
+### Fine-Tuning GPT-2
 
-Implemented a basic transformer model using PyTorch.
+* Fine-tuned a pre-trained GPT-2 model on the curated creative dataset
+* Used Hugging Face Transformers for training and inference
+* Evaluated generated text using qualitative assessment and standard NLP metrics
+* Experimented with different prompts to improve output quality
+* Uploaded the fine-tuned model for reuse and inference
 
-Developed core components:
+---
 
-Self-attention mechanism
+## Phase 2: Generative Adversarial Networks (GANs)
 
-Positional encoding
+### Introduction to GANs
 
-Encoder and decoder layers
+* Studied the generator–discriminator framework
+* Implemented vanilla GANs using TensorFlow
+* Understood binary cross-entropy loss and minimax optimization
 
-Trained the model for next-token prediction tasks.
+### FCGAN and DCGAN
 
-Evaluated performance using cross-entropy loss and qualitative text generation.
+* Implemented Fully Connected GANs (FCGAN) and Deep Convolutional GANs (DCGAN)
+* Compared training stability and output quality across architectures
 
-Generated sample outputs to analyze contextual coherence.
+### Wasserstein GANs
 
-Fine-Tuning GPT-2
+* Implemented Wasserstein GANs (WGAN) to improve training stability
+* Studied the benefits of Wasserstein loss over standard GAN loss functions
 
-Fine-tuned a pre-trained GPT-2 model on the curated creative dataset.
+### Conditional GANs
 
-Used Hugging Face Transformers for training and inference.
+* Implemented Conditional GANs (cGANs) for controlled image generation
+* Generated outputs conditioned on class labels or attributes
 
-Evaluated generated text using qualitative assessment and standard NLP metrics.
+---
 
-Experimented with different prompts to improve output quality.
+## Technologies Used
 
-Uploaded the fine-tuned model for reuse and inference.
+* Python
+* PyTorch
+* TensorFlow
+* Hugging Face Transformers
+* NumPy, Pandas, Matplotlib
 
-Phase 2: Generative Adversarial Networks (GANs)
-Introduction to GANs
+---
 
-Studied the generator–discriminator framework.
+## Outcomes
 
-Implemented vanilla GANs using TensorFlow.
+* Hands-on experience with transformer architectures and attention mechanisms
+* Practical understanding of fine-tuning large language models such as GPT-2
+* Experience implementing and comparing multiple GAN variants
+* Strong foundation in generative model training, evaluation, and experimentation
 
-Understood binary cross-entropy loss and minimax optimization.
+---
 
-FCGAN and DCGAN
+## Notes
 
-Implemented Fully Connected GANs (FCGAN) and Deep Convolutional GANs (DCGAN).
-
-Compared training stability and output quality across architectures.
-
-Wasserstein GANs
-
-Implemented Wasserstein GANs (WGAN) to improve training stability.
-
-Studied the benefits of Wasserstein loss over standard GAN loss functions.
-
-Conditional GANs
-
-Implemented Conditional GANs (cGANs) for controlled image generation.
-
-Generated outputs conditioned on class labels or attributes.
-
-Technologies Used
-
-Python
-
-PyTorch
-
-TensorFlow
-
-Hugging Face Transformers
-
-NumPy, Pandas, Matplotlib
-
-Outcomes
-
-Hands-on experience with transformer architectures and attention mechanisms.
-
-Practical understanding of fine-tuning large language models like GPT-2.
-
-Experience implementing and comparing multiple GAN variants.
-
-Strong foundation in generative model training, evaluation, and experimentation.
+This repository is intended for learning, experimentation, and demonstration of core generative AI concepts. Models and results may be further extended with larger datasets, longer training, and advanced evaluation metrics.
